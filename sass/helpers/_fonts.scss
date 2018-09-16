@@ -1,0 +1,25 @@
+/* Fonts
+*******************************************************************************/
+@font-face {
+    font-family: "Intro Cond";
+    src: url('../fonts/intro/intro_cond_light_free-webfont.eot');
+    src: url('../fonts/intro/intro_cond_light_free-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/intro/intro_cond_light_free-webfont.woff2') format('woff2'),
+         url('../fonts/intro/intro_cond_light_free-webfont.woff') format('woff'),
+         url('../fonts/intro/intro_cond_light_free-webfont.ttf') format('truetype'),
+         url('../fonts/intro/intro_cond_light_free-webfont.svg#intro_condlight_free') format('svg');
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Intro Cond";
+    src: url('../fonts/intro/intro_cond_black_free-webfont.eot');
+    src: url('../fonts/intro/intro_cond_black_free-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/intro/intro_cond_black_free-webfont.woff2') format('woff2'),
+         url('../fonts/intro/intro_cond_black_free-webfont.woff') format('woff'),
+         url('../fonts/intro/intro_cond_black_free-webfont.ttf') format('truetype'),
+         url('../fonts/intro/intro_cond_black_free-webfont.svg#intro_condblack_free') format('svg');
+    font-weight: black;
+    font-style: normal;
+}

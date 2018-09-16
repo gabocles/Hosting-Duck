@@ -1,0 +1,29 @@
+a:hover,
+a:focus,
+.btn:focus,
+.btn.focus,
+.btn:active:focus,
+.btn:active.focus,
+.btn.active:focus,
+.btn.active.focus{
+	outline: none;
+	text-decoration: none;
+}
+
+// Variables  ------------------------------------------
+//@import "helpers/_variables"; // Variables a utilizar en el sitio
+
+// /* Globals
+// *******************************************************************************/
+//@import "helpers/_fonts"; // Fuentes, tipografias (no se donde se usan)
+//@import "helpers/_icons"; 	// Algunos íconos
+
+/* Layout
+*******************************************************************************/
+@import "layout/_header";	// La cabecera del sitio
+	@import "interior"; 	// Los interiores y grueso del sitio
+@import "layout/_footer";	// El pie desde los testimonios hasta el final
+
+/* Media Queries
+*******************************************************************************/
+//@import "helpers/_media-queries";	// Todos los media queries del sitio van acá

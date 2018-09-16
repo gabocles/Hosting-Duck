@@ -1,0 +1,131 @@
+extends layout
+
+append config
+	- var pageTitle = "Hosting Duck | Inicio"
+
+//-block append stylesheets
+	link( href="../css/home.css", rel="stylesheet", type="text/css" )
+
+block content
+	.row
+		.col-md-12.increible-hosting
+			.row
+				.col-md-4.col1
+					h2 Increible Web Hosting
+					ul.list-unstyled
+						li: <img src="images/ico_world.png", alt="" /> Registro de dominio.com.ar Gratis.
+						li: <img src="images/ico_thunder.png", alt="" /> Espacio y trasferencia ILIMITADO.
+						li: <img src="images/ico_inbox.png", alt="" /> Aplicaciones listas para usar.
+						li: <img src="images/ico_color.png", alt="" /> Panel de control.
+						li: <img src="images/ico_mail.png", alt="" /> 100 cuentas de correo.
+
+				.col-md-4.col2
+					img(src="images/promo.png", alt="Promo!")
+
+				.col-md-3.caracteristicas
+					h3(style="display: none;") Caracteristicas
+					ul.list-unstyled
+						li
+							span.col-md-8 Espacio en disco 
+							| Ilimitado
+						li
+							span.col-md-8 Transferencia 
+							| Ilimitado
+						li
+							span.col-md-8 Cuentas de correo 
+							| 100
+						li
+							span.col-md-8 Bases de datos 
+							| 3 DBS
+						li
+							span.col-md-8 Panel de control 
+							| Si
+					a(href="#"): img(src="images/ordernow.png", alt="").img-responsive
+
+	.row
+		.col-md-12
+			.card-deck-wrapper
+				.card-deck
+					.card
+						.card-block.verde
+							h4.card-title Trasferi tu sitio.
+							ul.list-unstyled
+								li Gratis Registracion de dominio.
+								li Soporte Tecnico en tu idioma.
+								li Panel de administracion.
+								li Herramientas preinstaladas.
+								li Mayor velocidad de acceso.
+								li Multiples dominios.
+								li Mayor cuota de CPU por sitio.
+								li 99.7% Uptime garantizado.
+
+					.card
+						.card-block.azul
+							h4.card-title Caracteristicas:
+							ul.list-unstyled
+								li Espacio en disco ILIMITADO.
+								li Trasferencia ILIMITADA.
+								li 100 Cuentas de correo.
+								li 3 bases mysql.
+								li Registro de dominios GRATIS.
+								li Carito de compras.
+								li Blogs, galeria de imagenes.
+								li Galeria de imagenes.
+
+					.card
+						.card-block.rojo
+							h4.card-title Nuestros DNS.
+							ul.list-unstyled
+								li ns1.hostingduck.com (xxx.xx.xxx.xx)
+								li ns2.hostingduck.com (xxx.xx.xxx.xx)
+								li ns3.hostingduck.com (xxx.xx.xxx.xx)
+								li ns4.hostingduck.com (xxx.xx.xxx.xx)
+
+
+
+	.row
+		.col-md-12
+			.card.card-block.mision
+				h3.card-title Hosting Duck: Nuestra Mision.
+				p.card-text Día a día nos esforzamos para tener el mejor servicio del mercado con el precio más competitivo. Cuando pensamos que esta iba a ser nuestro camino, nos tildaron de locos. Hoy por hoy, esta meta fue cumplida.
+
+				p.card-text Pero esto no lo decimos nosotros sino los miles de clientes que confían en nosotros para tener su presencia en internet.
+					a(href="testimonios.html") [...]
+
+	.row
+		.container
+			.col-md-12.plansinclude
+				.row
+					.col-md-2.offset-md-2
+						.card.card-block.text-xs-center
+							img(src="images/mysql.png", alt="Mysql").img-responsive
+							a(href="http://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_bases_de_datos" title="Sistema de gestión de bases de datos")
+								small
+									<span>Mysql</span> Base de datos mas utilizada en el mercado.
+					.col-md-2
+						.card.card-block.text-xs-center
+							img(src="images/joombla.png", alt="Mysql").img-responsive
+							a(href="http://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_bases_de_datos" title="Sistema de gestión de bases de datos")
+								small
+									<span>Joomla!</span> sistemas de portal/CMS mas poderosos
+					.col-md-2
+						.card.card-block.text-xs-center
+							img(src="images/wordpress.png", alt="Mysql").img-responsive
+							a(href="http://wordpress.org/showcase/" target="_blank")
+								small
+									<span>WordPress</span> la plataforma de Blogs mas utilizada
+					.col-md-2
+						.card.card-block.text-xs-center
+							img(src="images/php.png", alt="Mysql").img-responsive
+							a(href="http://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_bases_de_datos" target="_blank")
+								small
+									<span>PHP</span> el lenguaje mas utilizado en programacion
+
+					.col-md-2
+						.card.card-block.text-xs-center
+							img(src="images/html5.png", alt="Mysql").img-responsive
+							a(href="#" target="_blank")
+								small
+									<span>HTML5</span> Nueva version del conocido lenguaje HTML
+
+	//- END .container

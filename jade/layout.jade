@@ -1,0 +1,109 @@
+block config
+	include config
+
+doctype
+html(lang="es")
+	head
+		title
+			block title
+				| #{pageTitle}
+
+		meta( charset="utf-8" )
+		meta( http-equiv="X-UA-Compatible", content="IE=edge" )
+		meta( name="viewport", content="width=device-width, initial-scale=1" )
+		meta( name="description", content="Lorem ipsum dolor sit amet" )
+		meta( name="author" content="" )
+		//- link( rel="icon" href="favicon.ico" )
+
+		//- Fonts -------------------------------
+		//- link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Pacifico", type="text/css")
+
+		//- Css -------------------------------
+		block stylesheets
+			link( href="css/default.css", rel="stylesheet", type="text/css" )
+			link( href="css/main.css", rel="stylesheet", type="text/css" )
+			link( href="fonts/font-awesome/css/font-awesome.min.css", rel="stylesheet", type="text/css" )
+	//- END Head
+
+	body
+		.container
+			.row
+				.col-md-12
+					.row
+						nav.nav-top
+							.col-md-1.col-xs-3.offset-md-5.text-xs-center
+								a(href="#"): img(src="images/livechat.png", alt="").img-responsive
+
+							.col-md-2.col-xs-5.offset-md-4.offset-xs-4.socialiconstop.text-xs-center
+								ul.list-inline
+									li.list-inline-item: a(href="")
+										img(src="images/ico_twitter.png", alt="")
+									li.list-inline-item: a(href="")
+										img(src="images/ico_facebook.png", alt="")
+									li.list-inline-item: a(href="")
+										img(src="images/ico_rss.png", alt="")
+
+			.header.clearfix
+				nav
+					h3.text-muted: img(src="images/logo.png", alt="").img-responsive
+
+					.bg.col-md-12
+						ul.nav.nav-pills.float-xs-right
+							li.nav-item: a.nav-link(href="index.html") Home
+								span.sr-only (current)
+							li.nav-item: a.nav-link(href="nuestro-producto.html") Nuestro Producto
+							li.nav-item.chatya: a.nav-link(href="#") Chat Ya
+							li.nav-item: a.nav-link(href="testimonios.html") Testimonios
+							li.nav-item: a.nav-link(href="contacto.html") Contacto
+
+			//- END Header
+
+
+
+			//- Contenido de las paginas interiores -------------------------------
+
+			block content
+
+			//- END Contenido de las paginas interiores -------------------------------
+
+
+
+		//- Footer -------------------------------
+		footer.footer
+			.footercontainer
+				.container
+					.col-md-2
+						ul.list-unstyled
+							li: a(href="nuestro-producto.html") Hosting
+							li: a(href="ordenelo.html") Ordenar Plan
+							li: a(href="testimonios.html") Casos de éxito
+
+					.col-md-3
+						h4 Social Activities
+						ul.list-inline
+							li.list-inline-item: a(href="#"): img(src="images/ico_fbsmall.gif", alt="Facebook")
+							li.list-inline-item: a(href="#"): img(src="images/ico_twittersmall.gif", alt="Twitter")
+							li.list-inline-item: a(href="#"): img(src="images/ico_rsssmall.gif", alt="Rss")
+
+						ul.list-unstyled
+							li: a(href="contacto.html") Contacto
+							li: a(href="#") Sitemap
+
+					.col-md-3
+						h4 Chat Now!
+						form
+							.form-group
+								label(for="nameordomain", style="display:none") Nombre o dominio
+								input#nameordomain.form-control(type="text" placeholder="Nombre o dominio")
+
+							.form-group
+								label(for="email", style="display:none") Email
+								input#email.form-control(type="text" placeholder="Email")
+
+							button.btn.btn-default(type="submit") Enviar
+
+
+				.container
+					.col-md-12
+						p.text-xs-center &copy; Copyright 2012 Hosting Duck Web Hosting. Todos los derechos reservados.
+		//- END Footer

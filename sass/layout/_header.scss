@@ -1,0 +1,54 @@
+/* Layout - Header
+*******************************************************************************/
+.socialiconstop{
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+	ul{
+		margin:0;
+		padding: 10px 0;
+	}
+
+}
+
+
+/* Custom page header */
+.header {
+	padding-bottom: 3rem;
+	position: relative;
+	nav{
+		.bg{
+			background: url(../images/navbg.gif) repeat-x left top;
+			border-radius: 12px;
+
+			ul{
+				li{
+					a{
+						color: #fff;
+						&:hover{
+							background: url(../images/navbghover.gif) repeat-x left top;
+						}
+					}
+					&.chatya{
+						background: url(../images/navbgchatnow.gif) repeat-x left top;
+						a:hover{
+							background: url(../images/navbgchatnow.gif) repeat-x left top;
+						}
+					}
+				}
+			}
+		}
+		
+		.nav-pills .nav-item + .nav-item{ margin: 0;}
+		.nav-pills .nav-link{ padding: 0.875em 1.5em;}
+	}
+
+
+	h3 {
+		position: absolute;
+		z-index: 1;
+		top: -22px;
+		left: 27px;
+	}
+
+
+}

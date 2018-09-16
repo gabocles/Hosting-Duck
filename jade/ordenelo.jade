@@ -1,0 +1,88 @@
+extends layout
+
+append config
+	- var pageTitle = "Hosting Duck | Ordenelo"
+
+	//- block append stylesheets
+		link( href="../css/interior.css", rel="stylesheet", type="text/css" )
+
+block content
+	.row
+		.container
+			.row
+				.col-md-12
+					h3 Ordenelo.
+					p.lead Completa tus datos para el alta del servicio.
+					p.lead Recordá: Tenes 30 dias para utilizar el servicio, si estas conforme con el funcionamiento y nuestra atención pagalo. 
+
+					form.col-md-6.offset-md-3
+						.form-group.row
+							label(for="dominio").col-sm-4.col-form-label Dominio:
+							.col-sm-8
+								input(type="text").form-control#dominio
+
+						.form-group.row
+							label(for="nombre").col-sm-4.col-form-label Nombre y Apellido:
+							.col-sm-8
+								input(type="text").form-control#nombre
+
+						.form-group.row
+							label(for="dni").col-sm-4.col-form-label DNI:
+							.col-sm-8
+								input(type="text").form-control#dni
+
+						.form-group.row
+							label(for="domicilio").col-sm-4.col-form-label Domicilio:
+							.col-sm-8
+								input(type="text").form-control#domicilio
+
+						.form-group.row
+							label(for="ciudad").col-sm-4.col-form-label Ciudad:
+							.col-sm-8
+								input(type="text").form-control#ciudad
+
+						.form-group.row
+							label(for="provincia").col-sm-4.col-form-label Provincia:
+							.col-sm-8
+								input(type="text").form-control#provincia
+
+						.form-group.row
+							label(for="pais").col-sm-4.col-form-label Pais:
+							.col-sm-8
+								input(type="text").form-control#pais
+
+						.form-group.row
+							label(for="cp").col-sm-4.col-form-label Código Postal:
+							.col-sm-8
+								input(type="text").form-control#cp
+
+
+						.form-group.row
+							label(for="tel").col-sm-4.col-form-label Teléfono:
+							.col-sm-8
+								input(type="text").form-control#tel
+
+
+						.form-group.row
+							label(for="mail").col-sm-4.col-form-label Email:
+							.col-sm-8
+								input(type="email", placeholder="Email").form-control#mail
+
+						.form-group.row
+							label(for="mailsec").col-sm-4.col-form-label Email:
+							.col-sm-8
+								input(type="email").form-control#mailsec
+
+
+						.form-group.row
+							label(for="comentarios").col-sm-4.col-form-label Comentarios:
+							.col-sm-8
+								textarea#comentarios.form-control(name="", rows="5")
+
+						.form-check.row
+							label(for="tyc").offset-sm-4.col-sm-8.form-check-label
+								<input id="tyc" class="form-check-input" type="checkbox"> Acepto términos y condiciones.
+
+						.form-group.row
+							.offset-sm-4.col-sm-8
+								button(type="submit").btn.btn-default Enviar

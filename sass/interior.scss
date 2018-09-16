@@ -1,0 +1,30 @@
+body{
+	background: url(../images/bg.jpg) no-repeat center top;
+	border-top: 8px solid #5588a4;
+}
+
+// Componentes extras
+// *******************************************************************************
+/*
+@import "components/_comp-componentesExtras";
+@import "components/_comp-modals";
+@import "components/_buttons";
+@import "components/_carouselSlider";
+*/
+
+/* Imports
+*******************************************************************************/
+// A cada uno de las pages habria que separarlos en components
+
+// Páginas fuertes del sitio
+// *******************************************************************************
+@import "pages/_home";
+@import "pages/_nuestro-producto";
+@import "pages/_testimonios";
+@import "pages/_contacto";
+
+// Componentes extras
+// *******************************************************************************
+//@import "";
+
+

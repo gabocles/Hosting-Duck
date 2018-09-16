@@ -1,0 +1,37 @@
+extends layout
+
+append config
+	- var pageTitle = "Hosting Duck | Contacto"
+
+	//- block append stylesheets
+		link( href="../css/interior.css", rel="stylesheet", type="text/css" )
+
+block content
+	.row
+		.container
+			.row
+				.col-md-12
+					h3 Contactate con nosotros.
+					p.lead Dejanos tus datos y nos pondremos en contacto.
+					p.lead Recorda también que podes utilizar nuestro chat en tiempo real con nuestros operadores las 24hs. los 365 días del año.
+
+					form.col-md-6.offset-md-3
+						.form-group.row
+							label(for="name").col-sm-2.col-form-label Nombre:
+							.col-sm-10
+								input(type="text", placeholder="Nombre").form-control#name
+
+						.form-group.row
+							label(for="mail").col-sm-2.col-form-label Email:
+							.col-sm-10
+								input(type="email", placeholder="Email").form-control#mail
+
+						.form-group.row
+							label(for="consulta").col-sm-2.col-form-label Consulta:
+							.col-sm-10
+								textarea#consulta.form-control(name="", rows="5")
+
+
+						.form-group.row
+							.offset-sm-2.col-sm-10
+								button(type="submit").btn.btn-default Enviar

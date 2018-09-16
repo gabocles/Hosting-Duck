@@ -1,0 +1,100 @@
+/* Page - Home
+*******************************************************************************/
+.increible-hosting{
+	background: url("../images/headerbg.jpg") no-repeat left top;
+	background-size: cover;
+	height: 375px;
+	margin-bottom: 30px;
+	padding-top: 10px;
+
+	h2{
+		color: #d30500;
+	}
+
+	.col1{
+		margin-top: 20px;
+
+		ul li{
+			margin-bottom: 10px;
+		}
+	}
+
+	.col2{ margin-top: 20px;}
+}
+
+.caracteristicas{
+	background: url("../images/ribbon.png") no-repeat left 21px #d8e9f2;
+	border-radius: 12px;
+	padding-bottom: 15px;
+	padding-top: 20px;
+
+	ul{
+		margin-top: 60px;
+	}
+}
+
+
+
+.verde{
+	ul{
+		li{
+			background: url("../images/bul_checkgreen.gif") no-repeat left 9px;
+			padding-left: 15px;
+		}
+	}
+}
+
+.azul{
+	ul{
+		li{
+			background: url("../images/bul_checkblue.gif") no-repeat left 9px;
+			padding-left: 15px;
+		}
+	}
+}
+
+.rojo{
+	ul{
+		li{
+			background: url("../images/morearrow.gif") no-repeat left 7px;
+			padding-left: 17px;
+		}
+	}
+}
+
+
+.mision{
+	background: repeating-linear-gradient(
+		-55deg,
+		#f8f6f6,
+		#f8f6f6 9px,
+		#fff 9px,
+		#fff 10px
+	);
+
+	border: none;
+}
+
+.plansinclude{
+	background: url("../images/incluye.png") no-repeat 33px center #dff3fe;
+	border-radius: 10px;
+
+	.card-block{
+		img{
+			display: block;
+			margin: 0 auto 5px auto;
+			max-height: 55px;
+			max-width: 100%;
+		}
+		background: none;
+		border: none;
+		margin-top: 20px;
+		padding: 0;
+		a{
+			color:#333;
+			&:hover{ text-decoration: underline;}
+		}
+
+		small span{ font-weight: bold;}
+	}
+}
